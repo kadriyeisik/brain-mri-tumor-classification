@@ -3,7 +3,7 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix, classification_report, ConfusionMatrixDisplay
 
-model = tf.keras.models.load_model("model/brain_tumor_model.keras")
+model = tf.keras.models.load_model("model/brain_tumor_efficientnet.keras")
 
 testing_path = "dataset/Testing"
 img_size = (224, 224)

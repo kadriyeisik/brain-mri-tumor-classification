@@ -29,7 +29,7 @@ for images, labels in train_data.take(1):
 
     print("Labels shape:")
     print(labels.shape)
-    from tensorflow.keras.applications import EfficientNetB0
+
     
 from tensorflow.keras.applications import EfficientNetB0
 
@@ -63,3 +63,5 @@ history = model.fit(
     validation_data=test_data,
     epochs=5
 )
+model.save("model/brain_tumor_efficientnet.keras")
+print("EfficientNet model saved successfully!")

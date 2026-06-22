@@ -9,7 +9,7 @@ st.set_page_config(
     layout="centered"
 )
 
-model = tf.keras.models.load_model("model/brain_tumor_model.keras")
+model = tf.keras.models.load_model("model/brain_tumor_efficientnet.keras")
 
 class_names = ["glioma", "meningioma", "notumor", "pituitary"]
 
